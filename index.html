@@ -9,29 +9,36 @@
     <title>Language Suggester</title>
 </head>
 <body>
-    <h1>Language Suggester!</h1>
+    <!--TITLE FOR LANGUAGE SUGGESTER-->
+    <h1>Language Suggester</h1>
+    <!--Start form to get user input-->
+    <form id="lang-form">
+        <!--Gets users first name-->
+        <div>
+            <label for="fname">First name:</label>
+            <input id="fname" type="text" placeholder="Please input your first name" required>
+        </div>
 
-    <form>
+        <!--Question #1 section -->
+        <div>
+            <label>What is your favorite color?</label>
 
-        <label for="q1"></label>
-        <input id="q1" type="">
+            <div>
+            <label for="q1">Red:</label>
+            <input type="radio" id="q1" name="q1">
 
-        <label for="q1"></label>
-        <input id="q1">
+            <label for="q1">Blue:</label>
+            <input type="radio" id="q1" name="q1">
 
-        <label for="q1"></label>
-        <input id="q1">
+            <label for="q1">Green:</label>
+            <input type="radio" id="q1" name="q1">
 
-        <label for="q1"></label>
-        <input id="q1">
+            </div>
+        </div>
 
-        <label for="q1"></label>
-        <input id="q1">
-
-        <label for="q1"></label>
-        <input id="q1">
 
         <button type="submit">Submit</button>
+
     </form>
     
 </body>
