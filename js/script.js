@@ -14,19 +14,14 @@ function handleSelect(event) {
 
     // GETS VALUE OF COLOR QUESTION 
     const questionColor = colorForm.querySelector('input[name=color]:checked').value;
-    console.log(questionColor)
     // GETS VALUE OF SANDWICH QUESTION 
     const questionSandwich = sandwichForm.querySelector('input[name=sandwich]:checked').value;
-    console.log(questionSandwich) 
     // GETS VALUE OF MOVIE QUESTION 
     const questionMovie = movieForm.querySelector('input[name=movie]:checked').value;
-    console.log(questionMovie) 
     // GETS VALUE OF DESSERT QUESTION 
     const questionDessert = dessertForm.querySelector('input[name=dessert]:checked').value;
-    console.log(questionDessert)
     // GETS VALUE OF BOOK QUESTION 
     const questionBook = bookForm.querySelector('input[name=book]:checked').value;
-    console.log(questionBook)
 
     // INITIALIZE SCORE FOR RESULTS
     let javaScore = 0;
