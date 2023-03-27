@@ -1,3 +1,11 @@
 #display {
     font-size: 50px;
 }
+
+input {
+    margin-right: 2.5vh;
+}
+
+.btn {
+    margin-top: 1.5vh;
+}
