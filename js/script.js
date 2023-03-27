@@ -97,8 +97,13 @@ function handleSelect(event) {
     // OUTPUT RESULTS TO SCREEN 
     if (javaScore > pythonScore && javaScore > cSharpScore) {
         displayTxt.innerText = `${Name}, you should learn Java!`
+    } else if (pythonScore > javaScore && pythonScore > cSharpScore) {
+        displayTxt.innerText = `${Name}, you should learn Python!`
+    } else if (cSharpScore > pythonScore && cSharpScore > javaScore) {
+        displayTxt.innerText = `${Name}, you should learn C#!`
     }
 
+    
 };
 
 
