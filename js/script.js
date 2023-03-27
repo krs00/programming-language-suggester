@@ -103,10 +103,21 @@ function handleSelect(event) {
         displayTxt.innerText = `${Name}, you should learn C#!`
     }
 
-    
+    // IF THERE ARE ANY EQUAL RESULTS
+    if (javaScore === pythonScore) {
+        displayTxt.innerText = `${Name}, you should learn Java!`
+    } else if (javaScore === cSharpScore) {
+        displayTxt.innerText = `${Name}, you should learn C#!`
+    } else if (pythonScore === cSharpScore) {
+        displayTxt.innerText = `${Name}, you should learn Python!`
+    }
 };
 
+// FUNCTION TO CLEAR DISPLAY
 
+function Clear(){
+    document.getElementById("display").innerText = "" 
+}
 
 
 
@@ -115,4 +126,7 @@ function handleSelect(event) {
 
 // adds event listener on submit of form, triggers handleSelect function
 document.getElementById("lang-form").addEventListener("submit", handleSelect)
+
+// RESET BUTTON CLEARS DISPLAY OUTPUT
+document.getElementById("reset-btn").addEventListener("click", Clear)
 
